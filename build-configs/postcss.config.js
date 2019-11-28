@@ -1,5 +1,4 @@
 const postcssRustHelpers = require("./tailwind.rust.extractor");
-const purgecss = require('@fullhuman/postcss-purgecss')
 const { resolve } = require("path");
 
 module.exports = () => {
@@ -26,9 +25,6 @@ module.exports = () => {
             return true;
           }
         }
-      }),
-      purgecss({
-        content: [`${PROJECT_ROOT}//src/**/*.{html,rs}`]
       }),
       require("autoprefixer")
     ]
