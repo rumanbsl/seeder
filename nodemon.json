@@ -1,0 +1,8 @@
+{
+  "verbose": false,
+  "watch": [
+    "build-configs/"
+  ],
+  "exec": "postcss build-configs/tailwind.css -o public/css/tailwind.css",
+  "ext": "js css"
+}
